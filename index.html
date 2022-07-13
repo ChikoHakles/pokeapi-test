@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEAPI TEST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div>
+        <datalist id="suggestions" class="selector">
+        </datalist>
+        <input class="search" autoComplete="on" list="suggestions"/> 
+        <button onclick="document.getElementsByClassName('search')[0].value = ''">CLEAR</button>
+    </div>
+    <div class="hasil-held">
+        <h1 class="hasil"></h1>
+        <button onclick="show(document.getElementsByClassName('search')[0].value)">SHOW</button>
+    </div>
+</body>
+</html>
