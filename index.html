@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEAPI TEST</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script src="script.js"></script>
     <script src="jquery.js"></script>
 </head>
 <body>
-    <div>
-        <datalist id="suggestions" class="selector">
-        </datalist>
-        <input class="search" autoComplete="on" list="suggestions"/> 
-        <button onclick="document.getElementsByClassName('search')[0].value = ''">CLEAR</button>
-    </div>
-    <div class="hasil-held">
-        <h1 class="hasil"></h1>
-        <button onclick="show(document.getElementsByClassName('search')[0].value)">SHOW</button>
+    <div class="container">
+        <div class="cont col-xs-8 col-xs-offset-2">
+            <div class="hasil-held">
+                <h1 class="hasil">SELECTED ITEM WILL BE SHOWN HERE</h1>
+            </div>
+            <div class="search-section">
+                <datalist id="suggestions" class="selector">
+                </datalist>
+                <input class="search col-xs-6 col-xs-offset-3" autoComplete="on" list="suggestions"/> 
+            </div>
+            <div class="button col-xs-12">
+                <button class="show col-xs-6" onclick="show(document.getElementsByClassName('search')[0].value)">SHOW</button>
+                <button class="clear col-xs-6" onclick="document.getElementsByClassName('search')[0].value = ''">CLEAR</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

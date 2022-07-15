@@ -1,0 +1,14 @@
+.button {
+    display: flex;
+    padding-top: 5rem;
+}
+.cont {
+    background-color: blanchedalmond;
+    border-radius: 8rem;
+    margin: 15rem 0 7rem;
+    padding: 4rem 0 5.5rem;
+}
+.hasil {
+    text-align: center;
+    margin-bottom: 5rem;
+}
